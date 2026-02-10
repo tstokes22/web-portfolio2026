@@ -11,16 +11,18 @@
   <body>
     <header>
       <div class="primary">
-        <div class="page-header">
-          <p><a class="logo" href="/">TS</a></p>
+        <div class="container">
+          <div class="page-header">
+            <p><a class="logo" href="/">TS</a></p>
 
-          <div class="link-group">
-            <nav>
-              <ul class="group">
-                <li><a href="#projects-section">projects</a></li>
-                <li><a href="#contact-section">contact</a></li>
-              </ul>
-            </nav>
+            <div class="link-group">
+              <nav>
+                <ul class="group">
+                  <li><a href="#projects-section">projects</a></li>
+                  <li><a href="#contact-section">contact</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -28,182 +30,205 @@
 
     <div id="main">
       <main class="full-width">
-        <section class="hero prose">
-          <h1>
-            Hello, my <br />
-            name's Taylor!
-          </h1>
+        <div class="container">
+          <section class="hero prose">
+            <h1>
+              Hello, my <br />
+              name's Taylor!
+            </h1>
 
-          <p id="hero-text">
-            I'm a computer science student at Florida State University.
-          </p>
-          <p id="hero-text">
-            This website is my portfolio of the projects I've worked on through
-            the years.
-          </p>
+            <p id="hero-text">
+              I'm a computer science student at Florida State University.
+            </p>
+            <p id="hero-text">
+              This website is my portfolio of the projects I've worked on
+              through the years.
+            </p>
 
-          <div id="projects-section" class="grid-container">
-            <ul class="my-projects">
-              <li class="card">
-                <h2>Health Screening App</h2>
-                <div class="platform">
-                  <button
-                    class="platform-pill html-platform-pill"
-                    type="button"
+            <div id="projects-section">
+              <ul class="my-projects">
+                <li class="card">
+                  <h2>Health Screening App</h2>
+                  <div class="platform">
+                    <button
+                      class="platform-pill html-platform-pill"
+                      type="button"
+                    >
+                      HTML
+                    </button>
+                    <button
+                      class="platform-pill php-platform-pill"
+                      type="button"
+                    >
+                      PHP
+                    </button>
+                    <button
+                      class="platform-pill js-platform-pill"
+                      type="button"
+                    >
+                      JS
+                    </button>
+                  </div>
+                  <p class="project-des">
+                    The Health Screening System is a full-stack web application
+                    designed for secure health metric tracking and
+                    administrative data oversight.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://github.com/tstokes22/HealthScreeningSemesterProject"
+                    ><button class="project-link-btn" type="button">
+                      Open Project
+                    </button></a
                   >
-                    HTML
-                  </button>
-                  <button class="platform-pill php-platform-pill" type="button">
-                    PHP
-                  </button>
-                  <button class="platform-pill js-platform-pill" type="button">
-                    JS
-                  </button>
-                </div>
-                <p class="project-des">
-                  The Health Screening System is a full-stack web application
-                  designed for secure health metric tracking and administrative
-                  data oversight.
-                </p>
-                <a
-                  target="_blank"
-                  href="https://github.com/tstokes22/HealthScreeningSemesterProject"
-                  ><button class="project-link-btn" type="button">
-                    Open Project
-                  </button></a
-                >
-              </li>
+                </li>
 
-              <li class="card">
-                <h2>Shipping Rate Calculator</h2>
-                <div class="platform">
-                  <button
-                    class="platform-pill html-platform-pill"
-                    type="button"
+                <li class="card">
+                  <h2>Shipping Rate Calculator</h2>
+                  <div class="platform">
+                    <button
+                      class="platform-pill html-platform-pill"
+                      type="button"
+                    >
+                      HTML
+                    </button>
+                    <button
+                      class="platform-pill js-platform-pill"
+                      type="button"
+                    >
+                      JS
+                    </button>
+                    <button
+                      class="platform-pill css-platform-pill"
+                      type="button"
+                    >
+                      CSS
+                    </button>
+                  </div>
+
+                  <p class="project-des">
+                    A web app + public API that returns the cheapest viable
+                    shipping options across carriers based on parcel size,
+                    weight, origin/destination, and target delivery time.
+                  </p>
+
+                  <a
+                    target="_blank"
+                    href="https://github.com/tstokes22/CEN4090L-Capstone-Project"
+                    ><button class="project-link-btn" type="button">
+                      Open Project
+                    </button></a
                   >
-                    HTML
-                  </button>
-                  <button class="platform-pill js-platform-pill" type="button">
-                    JS
-                  </button>
-                  <button class="platform-pill css-platform-pill" type="button">
-                    CSS
-                  </button>
-                </div>
+                </li>
 
-                <p class="project-des">
-                  A web app + public API that returns the cheapest viable
-                  shipping options across carriers based on parcel size, weight,
-                  origin/destination, and target delivery time.
-                </p>
-
-                <a
-                  target="_blank"
-                  href="https://github.com/tstokes22/CEN4090L-Capstone-Project"
-                  ><button class="project-link-btn" type="button">
-                    Open Project
-                  </button></a
-                >
-              </li>
-
-              <li class="card">
-                <h2>Hangman CLI</h2>
-                <div class="platform">
-                  <button class="platform-pill js-platform-pill" type="button">
-                    JAVA
-                  </button>
-                </div>
-                <p class="project-des">
-                  This project is a classic Hangman word-guessing game
-                  implemented in Java. Provides a character list in the terminal
-                  and easy way to change the word list.
-                </p>
-                <a target="_blank" href="https://github.com/tstokes22/Hangman"
-                  ><button class="project-link-btn" type="button">
-                    Open Project
-                  </button></a
-                >
-              </li>
-
-              <li class="card">
-                <h2>Asteroids clone</h2>
-                <div class="platform">
-                  <button
-                    class="platform-pill python-platform-pill"
-                    type="button"
+                <li class="card">
+                  <h2>Hangman CLI</h2>
+                  <div class="platform">
+                    <button
+                      class="platform-pill js-platform-pill"
+                      type="button"
+                    >
+                      JAVA
+                    </button>
+                  </div>
+                  <p class="project-des">
+                    This project is a classic Hangman word-guessing game
+                    implemented in Java. Provides a character list in the
+                    terminal and easy way to change the word list.
+                  </p>
+                  <a target="_blank" href="https://github.com/tstokes22/Hangman"
+                    ><button class="project-link-btn" type="button">
+                      Open Project
+                    </button></a
                   >
-                    PYTHON
-                  </button>
-                </div>
-                <p class="project-des">
-                  The Asteroids Arcade Clone is a modern reimagining of the
-                  classic 1979 arcade game, built from scratch using Python and
-                  the Pygame-ce library.
-                </p>
-                <a
-                  target="_blank"
-                  href="https://github.com/tstokes22/asteroids_game"
-                  ><button class="project-link-btn" type="button">
-                    Open Project
-                  </button></a
-                >
-              </li>
+                </li>
 
-              <li class="card">
-                <h2>State Park Leaflet Map</h2>
-                <div class="platform">
-                  <button
-                    class="platform-pill html-platform-pill"
-                    type="button"
+                <li class="card">
+                  <h2>Asteroids clone</h2>
+                  <div class="platform">
+                    <button
+                      class="platform-pill python-platform-pill"
+                      type="button"
+                    >
+                      PYTHON
+                    </button>
+                  </div>
+                  <p class="project-des">
+                    The Asteroids Arcade Clone is a modern reimagining of the
+                    classic 1979 arcade game, built from scratch using Python
+                    and the Pygame-ce library.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://github.com/tstokes22/asteroids_game"
+                    ><button class="project-link-btn" type="button">
+                      Open Project
+                    </button></a
                   >
-                    HTML
-                  </button>
-                  <button class="platform-pill js-platform-pill" type="button">
-                    JS
-                  </button>
-                  <button class="platform-pill css-platform-pill" type="button">
-                    CSS
-                  </button>
-                </div>
-                <p class="project-des">
-                  The South Dakota and Louisiana State Parks Interactive Map is
-                  a geospatial web application designed to help users visualize
-                  and explore state parks and recreational areas across South
-                  Dakota.
-                </p>
+                </li>
 
-                <a
-                  target="_blank"
-                  href="https://github.com/tstokes22/StateParkLeafletMaps_SDLA"
-                  ><button class="project-link-btn" type="button">
-                    Open Project
-                  </button></a
-                >
-              </li>
+                <li class="card">
+                  <h2>State Park Leaflet Map</h2>
+                  <div class="platform">
+                    <button
+                      class="platform-pill html-platform-pill"
+                      type="button"
+                    >
+                      HTML
+                    </button>
+                    <button
+                      class="platform-pill js-platform-pill"
+                      type="button"
+                    >
+                      JS
+                    </button>
+                    <button
+                      class="platform-pill css-platform-pill"
+                      type="button"
+                    >
+                      CSS
+                    </button>
+                  </div>
+                  <p class="project-des">
+                    The South Dakota and Louisiana State Parks Interactive Map
+                    is a geospatial web application designed to help users
+                    visualize and explore state parks and recreational areas
+                    across South Dakota.
+                  </p>
 
-              <li class="card">
-                <h2>BookBot</h2>
-                <div class="platform">
-                  <button
-                    class="platform-pill python-platform-pill"
-                    type="button"
+                  <a
+                    target="_blank"
+                    href="https://github.com/tstokes22/StateParkLeafletMaps_SDLA"
+                    ><button class="project-link-btn" type="button">
+                      Open Project
+                    </button></a
                   >
-                    PYTHON
-                  </button>
-                </div>
-                <p class="project-des">
-                  BookBot is a Python command-line utility designed to perform
-                  comprehensive text analysis on literary works.
-                </p>
-                <a target="_blank" href="https://github.com/tstokes22/bookbot"
-                  ><button class="project-link-btn" type="button">
-                    Open Project
-                  </button></a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
+                </li>
+
+                <li class="card">
+                  <h2>BookBot</h2>
+                  <div class="platform">
+                    <button
+                      class="platform-pill python-platform-pill"
+                      type="button"
+                    >
+                      PYTHON
+                    </button>
+                  </div>
+                  <p class="project-des">
+                    BookBot is a Python command-line utility designed to perform
+                    comprehensive text analysis on literary works.
+                  </p>
+                  <a target="_blank" href="https://github.com/tstokes22/bookbot"
+                    ><button class="project-link-btn" type="button">
+                      Open Project
+                    </button></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
 

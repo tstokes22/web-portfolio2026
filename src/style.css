@@ -16,31 +16,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a{
+* {
+  box-sizing: border-box;
+}
+
+a {
   color: white;
   text-decoration: none;
   margin-top: auto;
 
 }
- body {
+
+body {
   margin: 0;
   padding: 0;
   align-items: center;
 }
 
-h1{
+h1 {
   padding: 0;
   margin: 0;
   font-weight: 900;
   position: relative;
 }
 
-h2{
+h2 {
   padding: 0;
   margin: 0;
 }
 
-p{
+p {
   padding: 0;
 }
 
@@ -50,7 +55,15 @@ p{
   justify-content: center;
 
 }
-.page-header{
+
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter)
+}
+
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,18 +72,18 @@ p{
   max-width: var(--content-width);
 }
 
-.logo{
+.logo {
   display: flex;
   font-size: 1.5rem;
 }
 
-.link-group{
+.link-group {
   display: flex;
   font-size: 1rem;
   padding: 15px;
 }
 
-.group{
+.group {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,13 +98,11 @@ p{
 
 .hero{
   max-width: var(--content-width);
-  min-width: none;
   margin: 0 auto;
-  padding: 0 var(--gutter);
   display: flex;
   flex-direction: column;
-  overflow-wrap: break-word;
-  font-size: 3rem;
+  overflow-wrap: normal; word-break: normal;
+  font-size: clamp(1rem, 10vw, 3rem);
   line-height: 1.6;
   
 }
@@ -100,17 +111,12 @@ p{
   font-size: 2rem;
 }
 
-.grid-container{
-  display: flex;
-  justify-content: center;
-}
-
 /* Projects */ 
 .my-projects{
   display: grid;
   padding: 0;
   gap: 2rem;
-  grid-template-columns: minmax(min-content, 400px) minmax(min-content, 400px) minmax(min-content, 400px);
+  grid-template-columns: repeat(auto-fit, minmax(min(350px,100%), 1fr));
 }
 
 .card{
