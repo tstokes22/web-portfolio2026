@@ -120,6 +120,7 @@ p{
   gap: .75rem;
   padding: 2rem;
   border: solid 2px rgb(151, 151, 151);
+  box-shadow: 0 10px 2px rgb(29, 27, 27);
   border-radius: 1rem;
   background-color: #2b2a2a;
   font-size: 1rem;
@@ -132,14 +133,53 @@ p{
 }
 
 .project-link-btn{
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  width: 5rem;
-  padding: 10px;
-  width: 150px;
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
   cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #979797;
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: rgb(190, 187, 187);
+}
+
+.project-link-btn:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #2b2a2a;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.project-link-btn:hover {
+  color: #fff;
+}
+
+.project-link-btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.project-link-btn:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.project-link-btn:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
 }
 
 .platform{
@@ -201,3 +241,13 @@ p{
   margin-top: 50px;
 }
 
+.img-social{
+  width: 48px;
+  height: 48px;
+  padding: 5px;
+}
+
+.social-container{
+  display: flex;
+  flex-direction: row;
+}
